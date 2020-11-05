@@ -13,9 +13,7 @@ class _LoginState extends State<Login> {
   final _formKey = GlobalKey<FormState>();
   bool _obscureText = true;
   void chagedStateIcon(){
-    setState(() {
-      _obscureText = !_obscureText;
-    });
+    setState(() =>  _obscureText = !_obscureText);
   }
 
   @override
@@ -49,7 +47,9 @@ class _LoginState extends State<Login> {
                           Feather.mail,
                           color: Color(0xFF59BEB6),
                         ),
-                        suffixStyle: TextStyle(color: Color(0xFF59BEB6))),
+                        suffixStyle: TextStyle(color: Color(0xFF59BEB6)
+                      )
+                    ),
                   ),
                 ),
                 SizedBox(height: 15.0,),
@@ -78,7 +78,7 @@ class _LoginState extends State<Login> {
                   ),
                   padding: EdgeInsets.all(15.0),
                   color: Color(0xFF59BEB6),
-                  onPressed: (){},
+                  onPressed: () => Navigator.pushNamed(context, '/home'),
                   child: Text('Iniciar sesión', textScaleFactor: 1.3, style: GoogleFonts.ubuntu(color: Colors.white),),
                 ),
                 SizedBox(height: 10.0,),
@@ -87,9 +87,7 @@ class _LoginState extends State<Login> {
                   children: <Widget>[
                     Text('¿No tienes cuenta?', textScaleFactor: 1.2, style: GoogleFonts.ubuntu(color:  Color(0xFF347EBE)),),
                     FlatButton(
-                      onPressed: (){
-                        widget.toogleViews();
-                      },
+                      onPressed: () => widget.toogleViews(),
                       child: Text('Crear una', textScaleFactor: 1.1, style: GoogleFonts.ubuntu(color: Color(0xFF347EBE), decoration: TextDecoration.underline),),
                     ),
                   ],

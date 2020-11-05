@@ -24,9 +24,9 @@ dependencies:
   flutter:
     sdk: flutter
   google_fonts: ^1.1.0
-  material_design_icons_flutter: ^3.4.4795
+  material_design_icons_flutter: ^4.0.5755
   flutter_vector_icons: ^0.2.1
-  flutter_svg: ^0.17.4
+  flutter_svg: ^0.19.1
   modal_bottom_sheet: ^0.2.0+1
   flutter_swiper: ^1.1.6
   carousel_slider: ^2.2.1

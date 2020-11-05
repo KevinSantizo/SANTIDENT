@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:santident/src/authentication/login.dart';
 import 'package:santident/src/authentication/register.dart';
-import 'package:santident/src/authentication/toogleViews.dart';
 
 class Authenticate extends StatefulWidget {
   @override
