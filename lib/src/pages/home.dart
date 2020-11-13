@@ -73,7 +73,7 @@ class _HomePageState extends State<HomePage> {
           Align(
             alignment: Alignment.bottomRight,
             child: Container(
-              padding: EdgeInsets.all(15.0),
+              padding: EdgeInsets.all(10.0),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.only(topLeft: Radius.circular(20.0), bottomRight: Radius.circular(20.0) ),
                 color: Color(0xfff1a14b),

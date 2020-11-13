@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -72,14 +73,17 @@ class _LoginState extends State<Login> {
                   ),
                 ),
                 SizedBox(height: 45.0,),
-                FlatButton(
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10.0)
-                  ),
+                NeumorphicButton(
                   padding: EdgeInsets.all(15.0),
-                  color: Color(0xFF59BEB6),
+                  style: NeumorphicStyle(
+                    depth: 2.0,
+                    intensity: 1.0,
+                    color: Colors.white,
+                    shape: NeumorphicShape.flat,
+                    boxShape: NeumorphicBoxShape.roundRect(BorderRadius.circular(20)), 
+                  ),
                   onPressed: () => Navigator.pushNamed(context, '/home'),
-                  child: Text('Iniciar sesión', textScaleFactor: 1.3, style: GoogleFonts.ubuntu(color: Colors.white),),
+                  child: Text('Iniciar sesión', textAlign: TextAlign.center, style: GoogleFonts.ubuntu(color: Color(0xFF59BEB6), fontSize: 20.0 ),),
                 ),
                 SizedBox(height: 10.0,),
                 Row(
