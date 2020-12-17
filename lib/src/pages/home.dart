@@ -42,7 +42,7 @@ class _HomePageState extends State<HomePage> {
   }
 
  Widget _buildCardNewAppointment() {
-    final _screenSize = MediaQuery.of(context).size;
+   final _screenSize = MediaQuery.of(context).size;
    return Material(
      color: Colors.transparent,
      shape: RoundedRectangleBorder(
